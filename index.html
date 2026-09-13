@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design College Fair 2026, Kochi — 14 November | Free Entry | AFD India</title>
+<meta name="description" content="Meet admissions teams from India's top design and architecture colleges in one room. Saturday 14 November 2026, Kochi. Free entry, limited seats, registration required.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;600&display=swap">
+
+<!-- ============================================================
+     PORTING TO KNORISH
+     <style>   -> Page Header Code
+     <section> -> Custom HTML block on the page
+     <script>  -> Page Footer / Body End Code
+     All CSS scoped under .dcf — cannot touch your theme.
+     ============================================================ -->
+
+<style>
+.dcf{
+  --ink:#131C2B;
+  --ink-soft:#4A5567;
+  --paper:#EFEDE7;
+  --white:#FFFFFF;
+  --ochre:#D2921F;
+  --celadon:#8FBFA8;
+  --alert:#B8412E;
+  --line:#CFCCC3;
+
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"IBM Plex Sans",system-ui,-apple-system,sans-serif;
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+.dcf *,.dcf *::before,.dcf *::after{box-sizing:border-box;}
+.dcf p,.dcf h1,.dcf h2,.dcf h3,.dcf ul,.dcf ol,.dcf figure,.dcf dl{margin:0;}
+.dcf ul,.dcf ol{padding:0;list-style:none;}
+.dcf img,.dcf svg{max-width:100%;height:auto;display:block;}
+
+.dcf h1,.dcf h2,.dcf h3,.dcf .dcf-num,.dcf .dcf-time,.dcf .dcf-stat b{
+  font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;
+  font-weight:700;line-height:1.03;letter-spacing:-0.02em;
+}
+
+.dcf-wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+.dcf-band{padding:clamp(56px,7vw,88px) 0;border-top:1px solid var(--line);}
+
+/* deferred rendering for below-fold bands — cuts initial work */
+.dcf-defer{content-visibility:auto;contain-intrinsic-size:auto 700px;}
+
+.dcf-eyebrow{font-size:14px;font-weight:600;color:var(--ink-soft);margin-bottom:18px;display:flex;gap:10px;align-items:baseline;}
+.dcf-eyebrow::before{content:"";width:26px;height:2px;background:var(--ochre);display:inline-block;transform:translateY(-5px);flex:none;}
+
+.dcf h2{font-size:clamp(29px,4.4vw,46px);max-width:20ch;}
+.dcf-lede{font-size:clamp(17px,2vw,19px);color:var(--ink-soft);max-width:62ch;margin-top:16px;}
+
+/* ---------- buttons ---------- */
+.dcf-btn{
+  display:inline-block;padding:17px 32px;border:0;border-radius:2px;
+  background:var(--ochre);color:var(--ink);
+  font-family:"IBM Plex Sans",sans-serif;font-size:17px;font-weight:600;
+  text-decoration:none;cursor:pointer;text-align:center;
+  transition:background .18s ease,transform .18s ease;
+}
+.dcf-btn:hover{background:#BE8319;transform:translateY(-1px);}
+.dcf-btn--dark{background:var(--ink);color:var(--white);}
+.dcf-btn--dark:hover{background:#000;}
+.dcf-btn--ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink);}
+.dcf-btn--ghost:hover{background:var(--ink);color:var(--white);}
+.dcf a:focus-visible,.dcf button:focus-visible,.dcf input:focus-visible,.dcf select:focus-visible,.dcf summary:focus-visible{
+  outline:2px solid var(--ink);outline-offset:3px;
+}
+
+/* CTA row used at several points down the page */
+.dcf-cta-row{display:flex;flex-wrap:wrap;gap:14px 18px;align-items:center;margin-top:34px;}
+.dcf-micro{font-size:15px;color:var(--ink-soft);}
+.dcf-micro b{color:var(--alert);font-weight:600;}
+
+/* ---------- top urgency strip ---------- */
+.dcf-strip{
+  background:var(--ink);color:var(--paper);font-size:15px;
+  padding:11px 24px;display:flex;justify-content:center;gap:10px 20px;
+  flex-wrap:wrap;text-align:center;
+}
+.dcf-strip b{color:var(--ochre);font-weight:600;}
+.dcf-strip a{color:var(--paper);text-decoration:underline;text-underline-offset:3px;}
+
+/* ---------- hero ---------- */
+.dcf-hero{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(32px,5vw,56px);align-items:center;padding:clamp(44px,6vw,76px) 0 clamp(48px,6vw,80px);}
+.dcf-stamp{display:inline-flex;flex-wrap:wrap;align-items:center;gap:8px 14px;border:1.5px solid var(--ink);padding:9px 16px;margin-bottom:26px;font-size:14px;font-weight:600;}
+.dcf-stamp span{color:var(--ink-soft);font-weight:400;}
+.dcf-hero h1{font-size:clamp(37px,6.4vw,72px);font-weight:800;max-width:13ch;}
+.dcf-hero h1 em{font-style:normal;display:block;color:var(--ochre);}
+.dcf-hero .dcf-lede{margin-top:22px;}
+
+.dcf-seats{
+  display:flex;align-items:center;gap:12px;margin-top:26px;
+  font-size:15px;font-weight:600;color:var(--alert);
+}
+.dcf-seats::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--alert);flex:none;animation:dcf-pulse 2s ease-in-out infinite;}
+@keyframes dcf-pulse{0%,100%{opacity:1}50%{opacity:.25}}
+
+.dcf-count{display:flex;gap:clamp(16px,3vw,28px);margin-top:32px;padding-top:24px;border-top:1px solid var(--line);}
+.dcf-count>div{min-width:54px;}
+.dcf-count b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:clamp(28px,4vw,36px);font-weight:700;line-height:1;font-variant-numeric:tabular-nums;}
+.dcf-count span{font-size:13px;color:var(--ink-soft);}
+.dcf-count-label{font-size:13px;font-weight:600;color:var(--ink-soft);margin-top:24px;}
+
+/* ---------- floor plan ---------- */
+.dcf-plan{background:var(--white);border:1px solid var(--line);padding:20px;}
+.dcf-plan figcaption{font-size:13px;color:var(--ink-soft);margin-top:12px;}
+.dcf-booth{opacity:0;animation:dcf-in .45s ease forwards;}
+@keyframes dcf-in{to{opacity:1}}
+
+/* ---------- proof strip ---------- */
+.dcf-proof{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border-block:1px solid var(--line);}
+.dcf-stat{background:var(--paper);padding:26px 22px;}
+.dcf-stat b{display:block;font-size:clamp(26px,3.4vw,34px);}
+.dcf-stat span{font-size:14px;color:var(--ink-soft);}
+
+/* ---------- numbered list ---------- */
+.dcf-list{margin-top:44px;border-top:1px solid var(--line);}
+.dcf-item{display:grid;grid-template-columns:56px 1fr 1.3fr;gap:16px 28px;padding:24px 0;border-bottom:1px solid var(--line);align-items:start;}
+.dcf-num{font-size:15px;color:var(--ochre);padding-top:4px;}
+.dcf-item h3{font-size:clamp(19px,2.2vw,21px);}
+.dcf-item p{color:var(--ink-soft);font-size:16px;}
+
+/* ---------- photo band ---------- */
+.dcf-photos{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2px;}
+.dcf-photos figure{position:relative;background:var(--line);}
+.dcf-photos img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;}
+.dcf-photos figcaption{position:absolute;left:0;bottom:0;right:0;padding:14px 16px;font-size:14px;color:#fff;background:linear-gradient(transparent,rgba(19,28,43,.85));}
+.dcf-wide img{width:100%;aspect-ratio:21/8;object-fit:cover;}
+
+/* ---------- colleges ---------- */
+.dcf-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin-top:40px;border:1px solid var(--line);}
+.dcf-cell{background:var(--white);padding:20px;min-height:112px;}
+.dcf-cell .dcf-num{display:block;margin-bottom:8px;}
+.dcf-cell h3{font-size:17px;line-height:1.25;}
+.dcf-cell p{font-size:14px;color:var(--ink-soft);margin-top:6px;}
+.dcf-note{font-size:15px;color:var(--ink-soft);margin-top:18px;}
+
+/* ---------- schedule ---------- */
+.dcf-sched{margin-top:40px;}
+.dcf-slot{display:grid;grid-template-columns:150px 1fr;gap:6px 28px;padding:18px 0;border-bottom:1px solid var(--line);}
+.dcf-slot:first-child{border-top:1px solid var(--line);}
+.dcf-time{font-size:18px;}
+.dcf-slot h3{font-size:19px;}
+.dcf-slot p{font-size:16px;color:var(--ink-soft);margin-top:4px;}
+
+/* ---------- who ---------- */
+.dcf-who{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:40px;}
+.dcf-who h3{font-size:19px;padding-top:14px;border-top:3px solid var(--celadon);}
+.dcf-who p{font-size:16px;color:var(--ink-soft);margin-top:10px;}
+
+/* ---------- register ---------- */
+.dcf-register{background:var(--ink);color:var(--paper);border-top:0;}
+.dcf-register .dcf-eyebrow{color:#9AA6B8;}
+.dcf-register h2,.dcf-register .dcf-time{color:var(--white);}
+.dcf-register .dcf-lede{color:#B7C0CE;}
+.dcf-reg-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,56px);align-items:start;}
+.dcf-reg-points{margin-top:28px;}
+.dcf-reg-points li{padding:11px 0 11px 30px;position:relative;color:#C6CEDB;font-size:16px;border-bottom:1px solid #2A3650;}
+.dcf-reg-points li::before{content:"";position:absolute;left:2px;top:19px;width:11px;height:2px;background:var(--ochre);}
+.dcf-form{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;}
+.dcf-form label{display:block;font-size:13px;font-weight:600;color:#9AA6B8;margin-bottom:6px;}
+.dcf-form input,.dcf-form select{
+  width:100%;padding:14px 15px;border:1px solid #36415A;border-radius:2px;
+  background:#1B2638;color:var(--white);
+  font-family:"IBM Plex Sans",sans-serif;font-size:16px;
+}
+.dcf-form .dcf-full{grid-column:1/-1;}
+.dcf-form .dcf-btn{width:100%;padding:18px;font-size:18px;}
+.dcf-fineprint{font-size:14px;color:#8E99AB;margin-top:14px;}
+.dcf-formcount{font-size:14px;color:var(--ochre);font-weight:600;margin-bottom:18px;}
+
+/* ---------- faq ---------- */
+.dcf-faq{margin-top:40px;max-width:800px;}
+.dcf-faq details{border-bottom:1px solid var(--line);padding:18px 0;}
+.dcf-faq summary{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:clamp(17px,2vw,19px);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;}
+.dcf-faq summary::-webkit-details-marker{display:none;}
+.dcf-faq summary::after{content:"+";color:var(--ochre);font-size:24px;line-height:1;flex:none;}
+.dcf-faq details[open] summary::after{content:"\2013";}
+.dcf-faq p{color:var(--ink-soft);font-size:16px;margin-top:10px;max-width:68ch;}
+
+/* ---------- closing ---------- */
+.dcf-close{text-align:center;}
+.dcf-close h2{margin:0 auto;max-width:18ch;}
+.dcf-close .dcf-cta-row{justify-content:center;}
+
+/* ---------- sticky bar (all devices) ---------- */
+.dcf-sticky{
+  position:fixed;left:0;right:0;bottom:0;z-index:900;
+  display:flex;align-items:center;justify-content:center;gap:12px 26px;flex-wrap:wrap;
+  padding:12px 20px;background:var(--ink);
+  transform:translateY(110%);transition:transform .3s ease;
+}
+.dcf-sticky.is-on{transform:translateY(0);}
+.dcf-sticky p{color:var(--paper);font-size:15px;}
+.dcf-sticky b{color:var(--ochre);font-variant-numeric:tabular-nums;}
+.dcf-sticky .dcf-btn{padding:12px 24px;font-size:16px;}
+
+/* ---------- responsive ---------- */
+@media (max-width:1000px){
+  .dcf-hero{grid-template-columns:1fr;}
+  .dcf-reg-inner{grid-template-columns:1fr;}
+  .dcf-grid{grid-template-columns:repeat(3,1fr);}
+  .dcf-who{grid-template-columns:repeat(2,1fr);}
+}
+@media (max-width:760px){
+  .dcf-proof{grid-template-columns:repeat(2,1fr);}
+  .dcf-grid{grid-template-columns:repeat(2,1fr);}
+  .dcf-item{grid-template-columns:34px 1fr;}
+  .dcf-item p{grid-column:2;}
+  .dcf-photos{grid-template-columns:1fr 1fr;}
+  .dcf-photos figure:first-child{grid-column:1/-1;}
+  .dcf-slot{grid-template-columns:1fr;}
+}
+@media (max-width:520px){
+  .dcf{font-size:16px;}
+  .dcf-wrap{padding:0 18px;}
+  .dcf-grid,.dcf-who{grid-template-columns:1fr;}
+  .dcf-photos{grid-template-columns:1fr;}
+  .dcf-photos figure:first-child{grid-column:auto;}
+  .dcf-form{grid-template-columns:1fr;}
+  .dcf-cta-row .dcf-btn{width:100%;}
+  .dcf-sticky p{display:none;}
+  .dcf-sticky{padding:10px 16px;}
+  .dcf-sticky .dcf-btn{width:100%;}
+  .dcf-lastband{padding-bottom:108px;}
+  .dcf-wide img{aspect-ratio:16/9;}
+}
+@media (prefers-reduced-motion:reduce){
+  .dcf *{animation:none !important;transition:none !important;}
+  .dcf-booth{opacity:1;}
+  .dcf-sticky{transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<section class="dcf">
+
+  <!-- ============ TOP URGENCY STRIP ============ -->
+  <div class="dcf-strip">
+    <span><b>Sat 14 Nov 2026</b> &middot; Kochi &middot; Free entry</span>
+    <span>Registration closes <b>[[12 Nov]]</b> or when seats fill &mdash; <a href="#register">book yours</a></span>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <div class="dcf-wrap">
+    <div class="dcf-hero">
+      <div>
+        <div class="dcf-stamp"><span>One day</span> <b>[[12]] design colleges</b> <span>One room</span></div>
+        <h1>Stop guessing which design college is right for you. <em>Ask them.</em></h1>
+        <p class="dcf-lede">Admissions teams from India's leading design and architecture institutions come to Kochi for a single day. Portfolios, cut-offs, fees, placements &mdash; answered by the people who actually decide.</p>
+
+        <p class="dcf-seats"><span id="dcfSeats">[[Only 80 of 300 seats left]]</span></p>
+
+        <div class="dcf-cta-row">
+          <a class="dcf-btn" href="#register">Book my free seat &rarr;</a>
+          <span class="dcf-micro">Free entry &middot; Takes 40 seconds &middot; No payment</span>
+        </div>
+
+        <p class="dcf-count-label">Registration closes in</p>
+        <div class="dcf-count" id="dcfCount">
+          <div><b data-d>—</b><span>days</span></div>
+          <div><b data-h>—</b><span>hours</span></div>
+          <div><b data-m>—</b><span>mins</span></div>
+          <div><b data-s>—</b><span>secs</span></div>
+        </div>
+      </div>
+
+      <figure class="dcf-plan">
+        <svg viewBox="0 0 520 400" role="img" aria-label="Schematic floor plan of the fair: numbered college booths around a central talks stage, with a portfolio review desk near the entry.">
+          <rect x="16" y="16" width="488" height="368" fill="none" stroke="#131C2B" stroke-width="1.5"/>
+          <g font-family="IBM Plex Sans, sans-serif" font-size="9" fill="#4A5567">
+            <g class="dcf-booth" style="animation-delay:.05s"><rect x="40" y="44" width="78" height="54" fill="#EFEDE7" stroke="#131C2B"/><text x="48" y="62">01</text></g>
+            <g class="dcf-booth" style="animation-delay:.1s"><rect x="128" y="44" width="78" height="54" fill="#EFEDE7" stroke="#131C2B"/><text x="136" y="62">02</text></g>
+            <g class="dcf-booth" style="animation-delay:.15s"><rect x="216" y="44" width="78" height="54" fill="#D2921F" stroke="#131C2B"/><text x="224" y="62" fill="#131C2B">03</text></g>
+            <g class="dcf-booth" style="animation-delay:.2s"><rect x="304" y="44" width="78" height="54" fill="#EFEDE7" stroke="#131C2B"/><text x="312" y="62">04</text></g>
+            <g class="dcf-booth" style="animation-delay:.25s"><rect x="392" y="44" width="78" height="54" fill="#EFEDE7" stroke="#131C2B"/><text x="400" y="62">05</text></g>
+            <g class="dcf-booth" style="animation-delay:.3s"><rect x="40" y="120" width="78" height="54" fill="#EFEDE7" stroke="#131C2B"/><text x="48" y="138">06</text></g>
+            <g class="dcf-booth" style="animation-delay:.35s"><rect x="40" y="196" width="78" height="54" fill="#EFEDE7" stroke="#131C2B"/><text x="48" y="214">07</text></g>
+            <g class="dcf-booth" style="animation-delay:.4s"><rect x="40" y="272" width="78" height="54" fill="#8FBFA8" stroke="#131C2B"/><text x="48" y="290" fill="#131C2B">08</text></g>
+            <g class="dcf-booth" style="animation-delay:.45s"><rect x="392" y="120" width="78" height="54" fill="#EFEDE7" stroke="#131C2B"/><text x="400" y="138">09</text></g>
+            <g class="dcf-booth" style="animation-delay:.5s"><rect x="392" y="196" width="78" height="54" fill="#EFEDE7" stroke="#131C2B"/><text x="400" y="214">10</text></g>
+            <g class="dcf-booth" style="animation-delay:.55s"><rect x="392" y="272" width="78" height="54" fill="#EFEDE7" stroke="#131C2B"/><text x="400" y="290">11</text></g>
+            <g class="dcf-booth" style="animation-delay:.6s">
+              <rect x="150" y="150" width="200" height="108" fill="#FFFFFF" stroke="#131C2B" stroke-dasharray="4 3"/>
+              <text x="164" y="186" font-size="12" fill="#131C2B" font-weight="600">Talks stage</text>
+              <text x="164" y="204">Portfolio &amp; exam sessions</text>
+              <text x="164" y="220">through the day</text>
+            </g>
+            <g class="dcf-booth" style="animation-delay:.65s">
+              <rect x="150" y="296" width="200" height="42" fill="#EFEDE7" stroke="#131C2B"/>
+              <text x="164" y="322" font-size="11" fill="#131C2B">Portfolio review desk</text>
+            </g>
+            <line x1="236" y1="384" x2="284" y2="384" stroke="#EFEDE7" stroke-width="4"/>
+            <text x="238" y="375" font-size="10">ENTRY</text>
+          </g>
+        </svg>
+        <figcaption>Indicative hall layout. Registered attendees get the final booth map by email.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- ============ PROOF STRIP ============ -->
+  <div class="dcf-proof">
+    <div class="dcf-stat"><b>25+</b><span>years coaching design aspirants</span></div>
+    <div class="dcf-stat"><b>[[4,000+]]</b><span>students trained</span></div>
+    <div class="dcf-stat"><b>[[900+]]</b><span>selections to NIFT, NID &amp; NATA</span></div>
+    <div class="dcf-stat"><b>2</b><span>centres &mdash; Kochi &amp; Kannur</span></div>
+  </div>
+
+  <!-- ============ WHAT HAPPENS ============ -->
+  <div class="dcf-band dcf-defer">
+    <div class="dcf-wrap">
+      <p class="dcf-eyebrow">What the day looks like</p>
+      <h2>Four hours that save you four months of guesswork</h2>
+      <p class="dcf-lede">Most students pick a college from a website and a fee structure. This is your chance to pick one from a conversation.</p>
+
+      <div class="dcf-list">
+        <div class="dcf-item">
+          <div class="dcf-num">01</div>
+          <h3>Talk to admissions teams directly</h3>
+          <p>Eligibility, seat matrix, hostel, fees, scholarships, placement records. Bring the questions a brochure never answers.</p>
+        </div>
+        <div class="dcf-item">
+          <div class="dcf-num">02</div>
+          <h3>Get your portfolio reviewed, free</h3>
+          <p>Bring work in progress &mdash; sketchbook, digital folder, printed sheets. You'll get a direct read on where it stands and what's missing.</p>
+        </div>
+        <div class="dcf-item">
+          <div class="dcf-num">03</div>
+          <h3>Sit in on exam strategy sessions</h3>
+          <p>Short, practical talks on NIFT, NID, UCEED, NATA and JEE Paper 2 &mdash; what each test rewards and how preparation differs.</p>
+        </div>
+        <div class="dcf-item">
+          <div class="dcf-num">04</div>
+          <h3>Bring your parents into the room</h3>
+          <p>A session on what a design career actually looks like in India today: roles, salaries, and the path from entrance exam to first job.</p>
+        </div>
+      </div>
+
+      <div class="dcf-cta-row">
+        <a class="dcf-btn" href="#register">Reserve my seat &rarr;</a>
+        <span class="dcf-micro">Entry is free, but <b>seats are capped by hall capacity</b>.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ PHOTO BAND ============ -->
+  <div class="dcf-photos dcf-defer">
+    <figure>
+      <img src="[[/images/dcf-booths.webp]]" alt="Students talking to a college admissions representative at a booth" width="880" height="660" loading="lazy" decoding="async">
+      <figcaption>Admissions conversations, not brochures</figcaption>
+    </figure>
+    <figure>
+      <img src="[[/images/dcf-portfolio.webp]]" alt="A reviewer going through a student's sketchbook portfolio" width="620" height="465" loading="lazy" decoding="async">
+      <figcaption>Free portfolio reviews</figcaption>
+    </figure>
+    <figure>
+      <img src="[[/images/dcf-talk.webp]]" alt="Students seated for an exam strategy talk" width="620" height="465" loading="lazy" decoding="async">
+      <figcaption>Exam strategy sessions</figcaption>
+    </figure>
+  </div>
+
+  <!-- ============ COLLEGES ============ -->
+  <div class="dcf-band dcf-defer">
+    <div class="dcf-wrap">
+      <p class="dcf-eyebrow">Who's attending</p>
+      <h2>Institutions at the fair</h2>
+      <p class="dcf-lede">Design, architecture and allied programmes from across the country &mdash; national institutes and studio-led private schools in the same hall.</p>
+
+      <div class="dcf-grid">
+        <div class="dcf-cell"><span class="dcf-num">01</span><h3>[[College name]]</h3><p>[[City &middot; Programmes]]</p></div>
+        <div class="dcf-cell"><span class="dcf-num">02</span><h3>[[College name]]</h3><p>[[City &middot; Programmes]]</p></div>
+        <div class="dcf-cell"><span class="dcf-num">03</span><h3>[[College name]]</h3><p>[[City &middot; Programmes]]</p></div>
+        <div class="dcf-cell"><span class="dcf-num">04</span><h3>[[College name]]</h3><p>[[City &middot; Programmes]]</p></div>
+        <div class="dcf-cell"><span class="dcf-num">05</span><h3>[[College name]]</h3><p>[[City &middot; Programmes]]</p></div>
+        <div class="dcf-cell"><span class="dcf-num">06</span><h3>[[College name]]</h3><p>[[City &middot; Programmes]]</p></div>
+        <div class="dcf-cell"><span class="dcf-num">07</span><h3>[[College name]]</h3><p>[[City &middot; Programmes]]</p></div>
+        <div class="dcf-cell"><span class="dcf-num">08</span><h3>[[College name]]</h3><p>[[City &middot; Programmes]]</p></div>
+        <div class="dcf-cell"><span class="dcf-num">09</span><h3>[[College name]]</h3><p>[[City &middot; Programmes]]</p></div>
+        <div class="dcf-cell"><span class="dcf-num">10</span><h3>[[College name]]</h3><p>[[City &middot; Programmes]]</p></div>
+        <div class="dcf-cell"><span class="dcf-num">11</span><h3>[[College name]]</h3><p>[[City &middot; Programmes]]</p></div>
+        <div class="dcf-cell"><span class="dcf-num">12</span><h3>[[College name]]</h3><p>[[City &middot; Programmes]]</p></div>
+      </div>
+      <p class="dcf-note">More institutions confirming. Registered attendees get the final list by email before the fair.</p>
+
+      <div class="dcf-cta-row">
+        <a class="dcf-btn" href="#register">Get the final college list &rarr;</a>
+        <span class="dcf-micro">Sent only to registered attendees.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ SCHEDULE ============ -->
+  <div class="dcf-band dcf-defer">
+    <div class="dcf-wrap">
+      <p class="dcf-eyebrow">Schedule</p>
+      <h2>14 November, hour by hour</h2>
+
+      <div class="dcf-sched">
+        <div class="dcf-slot"><div class="dcf-time">[[10:00 AM]]</div><div><h3>Doors open</h3><p>Collect your booth map and session card at the entry desk.</p></div></div>
+        <div class="dcf-slot"><div class="dcf-time">[[10:30 AM]]</div><div><h3>Opening address</h3><p>How design admissions in India work this cycle &mdash; exams, timelines and what changed.</p></div></div>
+        <div class="dcf-slot"><div class="dcf-time">[[11:00 AM]]</div><div><h3>Booths open &middot; portfolio review desk opens</h3><p>Walk the floor at your own pace. Review desk runs first-come.</p></div></div>
+        <div class="dcf-slot"><div class="dcf-time">[[12:30 PM]]</div><div><h3>Exam strategy sessions</h3><p>NIFT and NID situation test, UCEED, NATA and JEE Paper 2 &mdash; back-to-back short talks.</p></div></div>
+        <div class="dcf-slot"><div class="dcf-time">[[02:00 PM]]</div><div><h3>Session for parents</h3><p>Careers, costs and outcomes, with time for questions.</p></div></div>
+        <div class="dcf-slot"><div class="dcf-time">[[03:30 PM]]</div><div><h3>Close</h3><p>Booths wind down. Admissions contacts shared with all attendees.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ WHO IT'S FOR ============ -->
+  <div class="dcf-band dcf-defer">
+    <div class="dcf-wrap">
+      <p class="dcf-eyebrow">Who it's for</p>
+      <h2>Come if you're anywhere on the path</h2>
+
+      <div class="dcf-who">
+        <div><h3>Class 11 &amp; 12 students</h3><p>Early enough to shape your preparation around the colleges you actually want.</p></div>
+        <div><h3>Parents</h3><p>Get the career and cost picture first-hand instead of second-hand.</p></div>
+        <div><h3>Repeaters &amp; gap-year students</h3><p>Find out where the last attempt fell short and which colleges are still in reach.</p></div>
+        <div><h3>Schools &amp; counsellors</h3><p>Bring a group &mdash; write to us and we'll set aside seats and a briefing slot.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ WIDE PHOTO ============ -->
+  <figure class="dcf-wide dcf-defer">
+    <img src="[[/images/dcf-hall.webp]]" alt="A busy college fair hall with students moving between booths" width="1600" height="610" loading="lazy" decoding="async">
+  </figure>
+
+  <!-- ============ REGISTER ============ -->
+  <div class="dcf-band dcf-register" id="register">
+    <div class="dcf-wrap">
+      <div class="dcf-reg-inner">
+        <div>
+          <p class="dcf-eyebrow">Registration</p>
+          <h2>Book your free seat</h2>
+          <p class="dcf-lede">Four fields. No payment, no obligation, no catch.</p>
+          <ul class="dcf-reg-points">
+            <li>Entry pass sent to your WhatsApp within minutes</li>
+            <li>Final college list emailed a week before the fair</li>
+            <li>Priority slot at the portfolio review desk</li>
+            <li>Your booth map, so you don't waste the day wandering</li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="dcf-formcount" id="dcfFormCount">Closing in <b><span data-d>—</span>d <span data-h>—</span>h <span data-m>—</span>m</b></p>
+          <form class="dcf-form" action="[[YOUR FORM ENDPOINT]]" method="POST">
+            <input type="hidden" name="formType" value="Design College Fair 2026">
+            <div class="dcf-full">
+              <label for="dcf-name">Full name</label>
+              <input id="dcf-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="dcf-full">
+              <label for="dcf-phone">WhatsApp number</label>
+              <input id="dcf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+            </div>
+            <div>
+              <label for="dcf-email">Email</label>
+              <input id="dcf-email" name="email" type="email" inputmode="email" autocomplete="email" required>
+            </div>
+            <div>
+              <label for="dcf-class">You are</label>
+              <select id="dcf-class" name="studentClass" required>
+                <option value="">Select</option>
+                <option>Class 11 student</option>
+                <option>Class 12 student</option>
+                <option>Repeater / gap year</option>
+                <option>Parent</option>
+                <option>School / counsellor</option>
+              </select>
+            </div>
+            <div class="dcf-full">
+              <button class="dcf-btn" type="submit">Confirm my free seat &rarr;</button>
+              <p class="dcf-fineprint">We'll only contact you about the fair and AFD India programmes.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ VENUE ============ -->
+  <div class="dcf-band dcf-defer">
+    <div class="dcf-wrap">
+      <div class="dcf-venue" style="display:grid;grid-template-columns:1fr 1.2fr;gap:44px;align-items:start;">
+        <div>
+          <p class="dcf-eyebrow">Getting there</p>
+          <h2>Venue &amp; entry</h2>
+          <dl style="margin-top:30px;">
+            <dt style="font-size:13px;font-weight:600;color:var(--ink-soft);margin-top:20px;">Venue</dt>
+            <dd style="margin:4px 0 0;font-size:18px;">[[Venue name]]<br>[[Street address, Kochi, Kerala PIN]]</dd>
+            <dt style="font-size:13px;font-weight:600;color:var(--ink-soft);margin-top:20px;">Date &amp; time</dt>
+            <dd style="margin:4px 0 0;font-size:18px;">Saturday, 14 November 2026<br>[[10:00 AM &ndash; 3:30 PM]]</dd>
+            <dt style="font-size:13px;font-weight:600;color:var(--ink-soft);margin-top:20px;">Entry</dt>
+            <dd style="margin:4px 0 0;font-size:18px;">Free, with prior registration</dd>
+            <dt style="font-size:13px;font-weight:600;color:var(--ink-soft);margin-top:20px;">Questions</dt>
+            <dd style="margin:4px 0 0;font-size:18px;"><a href="tel:[[PHONE]]">[[Phone number]]</a> &middot; <a href="mailto:info@afdindia.com">info@afdindia.com</a></dd>
+          </dl>
+        </div>
+        <div style="border:1px solid var(--line);min-height:330px;background:var(--white);">
+          <!-- Swap in the Google Maps embed for the venue -->
+          <iframe title="Map to the venue" src="[[GOOGLE MAPS EMBED URL]]" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="display:block;width:100%;height:100%;min-height:330px;border:0;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ FAQ ============ -->
+  <div class="dcf-band dcf-defer">
+    <div class="dcf-wrap">
+      <p class="dcf-eyebrow">Before you come</p>
+      <h2>Questions people ask</h2>
+      <div class="dcf-faq">
+        <details><summary>Is there any entry fee?</summary><p>No. Entry is free for students and parents. We ask you to register only so we can plan seating and send you the final college list in advance.</p></details>
+        <details><summary>Do I need to be an AFD India student to attend?</summary><p>No. The fair is open to any student considering design or architecture, whether or not you study with us.</p></details>
+        <details><summary>What should I bring?</summary><p>Your portfolio if you have one &mdash; a sketchbook, printed sheets or work on a laptop or phone all work. Bring a notebook for admissions details, and your parents if they want the careers session.</p></details>
+        <details><summary>Can my parents come with me?</summary><p>Yes, and we'd encourage it. There's a session built specifically for parents on careers, costs and outcomes in design.</p></details>
+        <details><summary>I'm in Class 11. Is it too early for me?</summary><p>It's the best time. Knowing your target colleges in Class 11 lets you shape your portfolio and preparation around them instead of catching up later.</p></details>
+        <details><summary>Can our school bring a group?</summary><p>Yes. Write to info@afdindia.com with the number of students and we'll reserve seats and arrange a briefing slot for your group.</p></details>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ CLOSING CTA ============ -->
+  <div class="dcf-band dcf-close dcf-lastband">
+    <div class="dcf-wrap">
+      <h2>One Saturday. Or another year of guessing.</h2>
+      <p class="dcf-lede" style="margin-left:auto;margin-right:auto;">The colleges you're applying to will be in one room on 14 November. Registration is free and takes under a minute.</p>
+      <div class="dcf-cta-row">
+        <a class="dcf-btn" href="#register">Book my free seat &rarr;</a>
+        <a class="dcf-btn dcf-btn--ghost" href="https://wa.me/[[91XXXXXXXXXX]]?text=Hi,%20I%20have%20a%20question%20about%20the%20Design%20College%20Fair">Ask on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ STICKY BAR ============ -->
+  <div class="dcf-sticky" id="dcfSticky">
+    <p>Design College Fair &middot; Sat 14 Nov &middot; Kochi &mdash; closes in <b id="dcfStickyCount">—</b></p>
+    <a class="dcf-btn" href="#register">Book free seat &rarr;</a>
+  </div>
+
+</section>
+
+<!-- ============ Structured data ============ -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Event","name":"Design College Fair 2026 — Kochi","startDate":"2026-11-14T10:00:00+05:30","endDate":"2026-11-14T15:30:00+05:30","eventStatus":"https://schema.org/EventScheduled","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","description":"Admissions teams from India's leading design and architecture colleges meet students and parents in Kochi. Portfolio reviews, exam strategy sessions and direct admissions conversations. Free entry with registration.","location":{"@type":"Place","name":"[[Venue name]]","address":{"@type":"PostalAddress","streetAddress":"[[Street address]]","addressLocality":"Kochi","addressRegion":"Kerala","postalCode":"[[PIN]]","addressCountry":"IN"}},"organizer":{"@type":"Organization","name":"AFD India","url":"https://afdindia.com"},"offers":{"@type":"Offer","price":"0","priceCurrency":"INR","availability":"https://schema.org/InStock","validFrom":"2026-09-15T00:00:00+05:30","url":"https://afdindia.com/design-college-fair"},"isAccessibleForFree":true}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is there any entry fee?","acceptedAnswer":{"@type":"Answer","text":"No. Entry is free for students and parents. Registration is only so we can plan seating and share the final college list in advance."}},
+{"@type":"Question","name":"Do I need to be an AFD India student to attend?","acceptedAnswer":{"@type":"Answer","text":"No. The fair is open to any student considering design or architecture."}},
+{"@type":"Question","name":"What should I bring?","acceptedAnswer":{"@type":"Answer","text":"Bring your portfolio if you have one — a sketchbook, printed sheets, or work on a laptop or phone. A notebook for admissions details is useful."}},
+{"@type":"Question","name":"Can my parents come with me?","acceptedAnswer":{"@type":"Answer","text":"Yes. There is a session built specifically for parents on careers, costs and outcomes in design."}},
+{"@type":"Question","name":"I am in Class 11. Is it too early for me?","acceptedAnswer":{"@type":"Answer","text":"Class 11 is the best time to attend. Knowing your target colleges early lets you shape your portfolio and exam preparation around them."}},
+{"@type":"Question","name":"Can our school bring a group?","acceptedAnswer":{"@type":"Answer","text":"Yes. Write to info@afdindia.com and seats plus a group briefing slot will be reserved."}}]}
+</script>
+
+<script>
+(function(){
+  "use strict";
+
+  // ---- countdown: drives hero, form and sticky bar from one timer ----
+  var DEADLINE = new Date('2026-11-14T10:00:00+05:30').getTime();
+
+  var hero   = document.getElementById('dcfCount');
+  var inForm = document.getElementById('dcfFormCount');
+  var stick  = document.getElementById('dcfStickyCount');
+
+  function put(root, d, h, m, s){
+    if(!root) return;
+    var el;
+    if((el = root.querySelector('[data-d]'))) el.textContent = d;
+    if((el = root.querySelector('[data-h]'))) el.textContent = h;
+    if((el = root.querySelector('[data-m]'))) el.textContent = m;
+    if((el = root.querySelector('[data-s]'))) el.textContent = s;
+  }
+
+  function tick(){
+    var left = DEADLINE - Date.now();
+    if(left <= 0){
+      if(hero) hero.style.display = 'none';
+      return;
+    }
+    var t = Math.floor(left/1000);
+    var d = Math.floor(t/86400),
+        h = Math.floor(t%86400/3600),
+        m = Math.floor(t%3600/60),
+        s = t%60;
+    put(hero, d, h, m, s);
+    put(inForm, d, h, m, s);
+    if(stick) stick.textContent = d + 'd ' + h + 'h ' + m + 'm';
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  // ---- sticky bar appears once the hero CTA scrolls away ----
+  var bar = document.getElementById('dcfSticky');
+  var reg = document.getElementById('register');
+  if(bar && 'IntersectionObserver' in window){
+    var sentinel = document.querySelector('.dcf-proof');
+    if(sentinel){
+      new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          // show once past the hero, hide again over the form itself
+          bar.classList.toggle('is-on', !e.isIntersecting && e.boundingClientRect.top < 0);
+        });
+      }, {threshold:0}).observe(sentinel);
+    }
+    if(reg){
+      new IntersectionObserver(function(entries){
+        entries.forEach(function(e){ if(e.isIntersecting) bar.classList.remove('is-on'); });
+      }, {threshold:.2}).observe(reg);
+    }
+  }
+
+  // ---- smooth scroll to the form ----
+  document.querySelectorAll('.dcf a[href="#register"]').forEach(function(a){
+    a.addEventListener('click', function(ev){
+      if(!reg) return;
+      ev.preventDefault();
+      reg.scrollIntoView({behavior:'smooth', block:'start'});
+      var first = document.getElementById('dcf-name');
+      setTimeout(function(){ if(first) first.focus({preventScroll:true}); }, 600);
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
